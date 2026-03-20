@@ -9,7 +9,14 @@ void my_sum(char type, int count, ...) {
     {
         for (int i = 0; i < count; i++)
         {
-            printf("%s\n", va_arg(sum,char*));
+            printf("%s", va_arg(sum,char*));
+            if (i >= count-1)
+            {
+               printf("\n");
+            } else 
+            {
+                printf(" ");
+            }            
         }
 
         va_end(sum);
