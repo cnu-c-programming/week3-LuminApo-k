@@ -14,7 +14,7 @@ void my_sum(char type, int count, ...) {
 
         printf("\n");
         va_end(sum);
-    }else if (type == 'C')
+    } else if (type == 'C')
     {
         for (int i = 0; i < count; i++)
         {
@@ -23,7 +23,7 @@ void my_sum(char type, int count, ...) {
         
         printf("\n");
         va_end(sum);
-    }  else if (type == 'D')
+    } else if (type == 'D')
     {
         int result = 0;
         for (int i = 0; i < count; i++)
@@ -36,7 +36,6 @@ void my_sum(char type, int count, ...) {
         va_end(sum);
     }
 }
-
 
 int main()
 {
